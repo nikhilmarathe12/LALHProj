@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace LALHDomain.Models
+namespace LALHDomain.EntityModels
 {
     public class WinAppMap
     {

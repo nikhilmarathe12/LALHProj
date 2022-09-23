@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace LALHDomain.Models
+namespace LALHDomain.EntityModels
 {
     public class UserManager
     {
