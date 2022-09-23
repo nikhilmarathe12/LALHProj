@@ -31,19 +31,21 @@ namespace LALHDomain.EntityModels
         public string Password { get; set; }
 
         [DisplayName("EmpID")]
+        [Column(TypeName = "VARCHAR(10)")]
         public string EmpID { get; set; }
 
         [DisplayName("DefaultDiv")]
+        [Column(TypeName = "VARCHAR(10)")]
         public string DefaultDiv { get; set; }
 
         [DisplayName("isActive")]
-        public bool isActive { get; set; }
+        public Boolean isActive { get; set; }
 
         [DisplayName("AAccess")]
-        public bool AAccess { get; set; }
+        public Boolean AAccess { get; set; }
 
         [DisplayName("isFullRights")]
-        public bool isFullRights { get; set; }
+        public Boolean isFullRights { get; set; }
         public DateTime CreatedOn { get; set; }
         public DateTime ModifiedOn { get; set; }
 
