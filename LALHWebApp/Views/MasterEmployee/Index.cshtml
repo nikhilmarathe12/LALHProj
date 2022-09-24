@@ -1,0 +1,10 @@
+﻿@model LHLAApplication.ViewModels.VMEmployee
+
+
+<div class="container body-content">
+    <div class="row employee-content">
+        @foreach (var employee in Model.MasterEmployees) {
+            <span>@employee.EmpCode</span> <div> | </div>  <span>@employee.FName</span> <div> | </div>   <span>@employee.LName</span>
+        }
+    </div>
+</div>
