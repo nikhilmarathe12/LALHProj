@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\InfraaIOC\InfraIOC.csproj" />
     <ProjectReference Include="..\LALHData\LALHData.csproj" />
   </ItemGroup>
 

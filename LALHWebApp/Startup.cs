@@ -1,3 +1,4 @@
+using InfraIOC;
 using LALHData.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -30,6 +31,8 @@ namespace LALHWebApp
                 options.UseSqlServer(Configuration.GetConnectionString("LALetterHeadDBConnectionString"));
             });
             services.AddControllersWithViews();
+
+            RegisterServices(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -58,6 +61,11 @@ namespace LALHWebApp
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+        }
+    
+        private static void RegisterServices(IServiceCollection services)
+        {
+            DependencyContainer.RegisterServices(services);
         }
     }
 }
