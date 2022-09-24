@@ -7,6 +7,6 @@ namespace LALHDomain.Interfaces
 {
     public interface IMasterEmployeeRepository
     {
-        IEnumerable<MasterEmployee> GetMasterEmployees();
+       public IEnumerable<MasterEmployee> GetMasterEmployees();
     }
 }

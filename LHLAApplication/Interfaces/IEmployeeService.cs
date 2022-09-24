@@ -1,10 +1,12 @@
 ﻿using LHLAApplication.ViewModels;
+using System;
 using System.Collections.Generic;
+using System.Text;
 
-namespace LHLAApplication.Services
+namespace LHLAApplication.Interfaces
 {
     public interface IEmployeeService
     {
-        IEnumerable<VMEmployee> GetMasterEmployees();
+       public VMEmployee GetMasterEmployees();
     }
 }
